@@ -7,20 +7,6 @@ from HTMLTestRunner import HTMLTestRunner
 from ddt import ddt, data, unpack, file_data
 
 
-@ddt
-class MyTestCase(unittest.TestCase):
-
-
-    # @data(['user','name'],['admin','4444'])
-    # @unpack
-    @file_data('login_data.yaml')
-    def test_1_case(self,**user_data):
-        # print(time.localtime())
-        # date_now = time.strftime('%Y-%m-%d', time.localtime())
-        print(date_now)
-        print(user_data)
-
-
 if __name__ == '__main__':
     # unittest.main()
     suite = unittest.TestSuite()
